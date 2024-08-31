@@ -277,7 +277,7 @@ p {
   .show{
     opacity: 1;
   animation-fill-mode: forwards ;
-  animation-duration: 3s;
+  animation-duration: 2s;
   
 }
 .html.show{
