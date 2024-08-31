@@ -1,7 +1,10 @@
+// const showele = document.querySelectorAll(".show")
+
 let numhtml = document.querySelector(".ht")
 let counthtml = 0
 
 setInterval(()=>{
+        if(numhtml.classList.contains("show")){
     if(counthtml == 90){
         clearInterval()
     }
@@ -9,6 +12,9 @@ setInterval(()=>{
         
         counthtml += 1
         numhtml.innerHTML = counthtml +"%"
+    }}
+    else{
+        counthtml = 0;
     }
 },20)
 
@@ -16,6 +22,7 @@ let numcss = document.querySelector(".ssc")
 let countcss = 0
 
 setInterval(()=>{
+    if(numcss.classList.contains("show")){
     if(countcss == 85){
         clearInterval()
     }
@@ -23,6 +30,9 @@ setInterval(()=>{
         
         countcss += 1
         numcss.innerHTML = countcss +"%"
+    }}
+    else{
+        countcss = 0;
     }
 },20)
 
@@ -32,6 +42,7 @@ let numjs = document.querySelector(".javascript")
 let countjs = 0
 
 setInterval(()=>{
+    if(numjs.classList.contains("show")){
     if(countjs == 80){
         clearInterval()
     }
@@ -40,6 +51,8 @@ setInterval(()=>{
         countjs += 1
         numjs.innerHTML = countjs +"%"
         
+    }} else{
+        countjs = 0;
     }
 },19)
 
@@ -47,6 +60,7 @@ let numsql = document.querySelector(".sq")
 let countsql = 0
 
 setInterval(()=>{
+    if(numsql.classList.contains("show")){
     if(countsql == 66){
         clearInterval()
     }
@@ -54,6 +68,8 @@ setInterval(()=>{
         
         countsql += 1
         numsql.innerHTML = countsql +"%"
+    }} else{
+        countsql = 0;
     }
 },25)
 

@@ -4,21 +4,20 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-html{
+html {
   scroll-behavior: smooth;
+  background-color: black;
 }
 body {
-  background-color: rgb(32, 31, 31);
+  background-color: black;
   color: white;
-
-  
 }
 .bgi {
   background-image: url("bg.jpg");
   /* background-repeat: no-repeat; */
   /* background-size: cover; */
 }
-.black{
+.black {
   background-color: black;
 }
 
@@ -30,7 +29,7 @@ body {
 }
 
 .navbar {
-  width: 100%;  
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +44,7 @@ body {
   gap: 10rem;
   /* padding: 0rem 1rem 0rem 1rem; */
 }
-.port{
+.port {
   /* width: 30%; */
   margin-left: 5rem;
   font-size: 24px;
@@ -62,8 +61,6 @@ ul {
   align-items: center;
   text-align: center;
   margin-left: 8rem;
-  
-  
 }
 
 ul a {
@@ -83,7 +80,7 @@ a:hover {
 }
 
 .home {
-  width: 90vw;
+  width: 100%;
   height: 90vh;
   /* background-color: aquamarine; */
   display: flex;
@@ -177,7 +174,8 @@ p {
 .hd {
   display: inline-block;
   border-bottom: 2px solid aqua;
-  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
   color: aqua;
   padding: 10px;
   transition: fill ease 0.3s;
@@ -188,8 +186,8 @@ p {
   justify-content: center;
   align-items: center;
   gap: 10px;
-    padding: 10px;
-    color: black;
+  padding: 10px;
+  color: black;
   position: absolute;
   /* background-color: rgba(255, 255, 255, 0.308); */
   margin-top: 2rem;
@@ -197,7 +195,7 @@ p {
   width: 93vw;
 }
 .s {
-    text-align: center;
+  text-align: center;
   height: 100%;
   width: 300px;
   background-color: #e3edf7f6;
@@ -206,9 +204,9 @@ p {
   justify-content: center;
   position: relative;
 }
-.skill-nm{
-    position: absolute;
-    top: 2.5rem;
+.skill-nm {
+  position: absolute;
+  top: 2.5rem;
 }
 .outer {
   height: 160px;
@@ -232,148 +230,139 @@ p {
     0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px 10px rgba(0, 0, 0, 0.05);
   border-radius: 50%;
 }
-.number{
-    font-weight: bold;
-    font-size: 20px;
+.number {
+  font-weight: bold;
+  font-size: 20px;
 }
-.html-progress{
-    fill: none;
-    stroke:url(#GradientColor) ;
-    stroke-width: 21px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 472;
-    
+.html-progress {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 21px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
 }
-.css-progress{
-    fill: none;
-    stroke:url(#GradientColor) ;
-    stroke-width: 21px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 472; 
- 
-
+.css-progress {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 21px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
 }
 
-.js-progress{
-    fill: none;
-    stroke:url(#GradientColor) ;
-    stroke-width: 21px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 472;  
-    
-  }
-.sql-progress{
-    fill: none;
-    stroke:url(#GradientColor) ;
-    stroke-width: 21px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 472;  
-  }
+.js-progress {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 21px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+}
+.sql-progress {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 21px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+}
 
-  .hidden{
-    opacity: 0; 
-  }
-  
-  .show{
-    opacity: 1;
-  animation-fill-mode: forwards ;
+.hidden {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+  animation-fill-mode: forwards;
   animation-duration: 2s;
-  
 }
-.html.show{
+.html.show {
   animation-name: html;
 }
 
-.css.show{
+.css.show {
   animation-name: css;
 }
 
-.js.show{
+.js.show {
   animation-name: js;
 }
 
-.sql.show{
+.sql.show {
   animation-name: sql;
 }
 
-
-
-svg{
-    position: absolute;
-    
+svg {
+  position: absolute;
 }
-@keyframes html{
-  100%{
-      stroke-dashoffset: 47;
+@keyframes html {
+  100% {
+    stroke-dashoffset: 47;
   }
 }
 
-@keyframes css{
-    100%{
-        stroke-dashoffset: 71;
-    }
-}
-@keyframes js{
-  100%{
-      stroke-dashoffset: 95;
+@keyframes css {
+  100% {
+    stroke-dashoffset: 71;
   }
 }
-@keyframes sql{
-  100%{
-      stroke-dashoffset: 165;
+@keyframes js {
+  100% {
+    stroke-dashoffset: 95;
+  }
+}
+@keyframes sql {
+  100% {
+    stroke-dashoffset: 165;
   }
 }
 .txt-center {
   text-align: center;
- 
+
   display: inline-block;
-  
 }
-.services{
+.services {
   margin-top: 2rem;
   height: 90vh;
   width: 91vw;
   text-align: center;
 }
 
-.service-box{
+.service-box {
   margin-top: 5rem;
   display: flex;
   gap: 2rem;
 }
 
-.box{
+.box {
   border-radius: 8px;
   text-align: left;
-  max-width:400px;
- box-shadow: 0px 0px 15px 5px blue;
+  max-width: 400px;
+  box-shadow: 0px 0px 15px 5px blue;
   color: white;
   display: flex;
   justify-content: center;
   align-items: start;
   flex-direction: column;
   padding: 1rem;
-  transition: all ease .7s;
+  transition: all ease 0.7s;
 }
-.box:hover{
+.box:hover {
   transform: translatey(-20px);
 }
 
-.s-icon{
- height: 28px;
- width: 28px;
- fill: aqua;
+.s-icon {
+  height: 28px;
+  width: 28px;
+  fill: aqua;
 }
-.service-hd{
+.service-hd {
   font-size: 24px;
   font-weight: bold;
 }
-.service-info{
+.service-info {
   font-size: 14px;
   font-weight: 600;
 }
 
-.service-btn{
+.service-btn {
   padding: 8px 16px;
   border-radius: 1rem;
   border: none;
@@ -382,68 +371,64 @@ svg{
   background-color: aqua;
   transition: all ease 0.4s;
 }
-.service-btn:hover{
+.service-btn:hover {
   box-shadow: 0px 0px 8px 5px aqua;
 }
 
-.work{
+.work {
   height: 90vh;
   width: 91vw;
   text-align: center;
   margin-top: -3rem;
-  
 }
 
-.work-box{
+.work-box {
   margin-top: 7rem;
   display: flex;
   gap: 2rem;
-  
-  
 }
-.wbox{
+.wbox {
   border-radius: 8px;
-  width:400px;
-  max-width:400px;
- box-shadow: 0px 0px 15px 5px blue;
+  width: 400px;
+  max-width: 400px;
+  box-shadow: 0px 0px 15px 5px blue;
   color: blue;
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  transition: all ease .7s;
+  transition: all ease 0.7s;
   font-weight: bold;
 }
 
-.wbox:hover{
+.wbox:hover {
   background-color: blue;
-  animation: re 1s linear ;
+  animation: re 1s linear;
   color: white;
 }
 
 @keyframes re {
-  50%{
+  50% {
     opacity: 0.5;
   }
-  100%{opacity: 1;}
-
-
+  100% {
+    opacity: 1;
+  }
 }
 
-.w-icon{
+.w-icon {
   margin-top: 1rem;
   height: 52px;
   width: 52px;
-  
 }
-.work-hd{
-  margin-top:2.5rem ;
+.work-hd {
+  margin-top: 2.5rem;
   text-align: center;
 }
-.work-info{
+.work-info {
   margin-bottom: 2rem;
 }
 
-.work-span{
+.work-span {
   overflow-wrap: break-word;
   font-size: 26px;
   font-weight: bold;
@@ -451,8 +436,66 @@ svg{
   margin-right: 5px;
   color: aqua;
 }
-.experience{
+.experience {
   font-size: 20px;
   margin-left: 2px;
 }
 
+.contect {
+  text-align: center;
+  /* background-color: rgb(90, 52, 3); */
+  height: 90vh;
+  width: 100%;
+}
+
+.contect-hd {
+  margin-top: 3rem;
+}
+
+.form-info {
+  /* background-color: yellow; */
+  height: 75vh;
+  width: 70%;
+  padding: 1.5rem;
+  border: 2px solid aqua;
+  margin: 1rem auto 1rem auto;
+}
+.info1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info1 input {
+  padding: 8px;
+  font-size: 16px;
+
+  border-radius: 10px;
+  border: none;
+  color: rgba(250, 246, 246, 0.411);
+}
+
+.contect-info {
+  border: 2px solid aqua;
+  border-radius: 10px;
+  padding: 1rem;
+  height: 25%;
+  width: 70%;
+  margin: 1rem auto 1rem auto;
+  color: aqua;
+}
+.us {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: -3px;
+}
+
+.em {
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 25px;
+}
+
+.nu {
+  letter-spacing: 0.7px;
+}
