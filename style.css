@@ -446,6 +446,7 @@ svg {
   /* background-color: rgb(90, 52, 3); */
   height: 90vh;
   width: 100%;
+  margin-top: -8rem;
 }
 
 .contect-hd {
@@ -457,8 +458,9 @@ svg {
   height: 75vh;
   width: 70%;
   padding: 1.5rem;
-  border: 2px solid aqua;
+  border: 2px solid rgb(0, 255, 255);
   margin: 1rem auto 1rem auto;
+  border-radius: 10px;
 }
 .info1 {
   display: flex;
@@ -466,20 +468,79 @@ svg {
   justify-content: space-between;
 }
 
-.info1 input {
-  padding: 8px;
+.form-info input {
+  padding: 10px;
   font-size: 16px;
-
+  background-color: black;
   border-radius: 10px;
-  border: none;
+  border: 2px solid rgba(127, 255, 212, 0.288);
   color: rgba(250, 246, 246, 0.411);
+
+ 
+}
+.info1 input{
+  width: 21rem;
+  height: 2.5rem;
+  color: aqua;
+  letter-spacing: 1px;
+
 }
 
-.contect-info {
+.info2 {
+  margin-top: 2rem;
+}
+
+.info2 input {
+  width: 100%;
+  height: 2.5rem;
+  color: aqua;
+  letter-spacing: 1px;
+
+}
+.massage{
+  margin-top: 2rem;
+  color: black;
+}
+
+textarea{
+  letter-spacing: 1px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid rgba(127, 255, 212, 0.288);
+  color: aqua;
+  width: 100%;
+  height: 11rem;
+  resize: none;
+  outline: none;
+
+}.submit-btn{
+  margin-top: 5px;
+  height: 4rem;
+  margin-top: 2rem;
+}
+.submit-btn .submit{
+  color: aqua;
+  background-color: black;
   border: 2px solid aqua;
+  padding: 10px 2rem 10px 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all ease 0.4s;
+}
+
+.submit-btn .submit:hover{
+  background-color: aqua;
+  color: black;
+}
+
+
+.contect-info {
+  /* border: 2px solid aqua; */
   border-radius: 10px;
   padding: 1rem;
-  height: 25%;
+  height: 45%;
   width: 70%;
   margin: 1rem auto 1rem auto;
   color: aqua;
@@ -499,3 +560,27 @@ svg {
 .nu {
   letter-spacing: 0.7px;
 }
+.footer-links{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 2rem;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.ftr{
+  height: 26px;
+  width: 26px;
+}
+.copy-right{
+  margin-top: 2rem;
+  letter-spacing: 1px;
+
+}
+.copy{
+  text-decoration: underline;
+  
+}
+
+
