@@ -1,0 +1,299 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+  }
+  
+  .navbar .port p {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar ul a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar ul a:hover {
+    background-color: #e91e63;
+    border-radius: 5px;
+  }
+  
+  /* Home Section */
+  .home {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background-color: #f4f4f4;
+  }
+  
+  .info {
+    flex: 1;
+  }
+  
+  .info h3, .info h1, .info h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .socialmedia {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .socialmedia a {
+    color: inherit;
+  }
+  
+  .socialmedia .sm {
+    background-color: #333;
+    padding: 0.5rem;
+    border-radius: 50%;
+  }
+  
+  .socialmedia .icon {
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .skills {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .s {
+    text-align: center;
+  }
+  
+  .skill-nm {
+    font-size: 1.2rem;
+  }
+  
+  .outer {
+    position: relative;
+    width: 160px;
+    height: 160px;
+  }
+  
+  .outer .inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #ddd;
+  }
+  
+  /* Services Section */
+  .services {
+    background-color: #333;
+    color: #fff;
+    padding: 4rem 2rem;
+  }
+  
+  .service-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .box {
+    flex: 1;
+    background-color: #444;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .box h4 {
+    font-size: 1.5rem;
+  }
+  
+  .box p {
+    font-size: 1rem;
+  }
+  
+  .service-btn {
+    background-color: #e91e63;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .service-btn:hover {
+    background-color: #d81b60;
+  }
+  
+  /* Work Section */
+  .work {
+    padding: 2rem;
+    background-color: #f4f4f4;
+  }
+  
+  .work-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .wbox {
+    flex: 1;
+    background-color: #444;
+    padding: 2rem;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .wbox h4 {
+    font-size: 1.5rem;
+  }
+  
+  .wbox .work-info {
+    font-size: 1rem;
+  }
+  
+  /* Contact Section */
+  .contect {
+    padding: 2rem;
+    background-color: #e91e63;
+    color: #fff;
+  }
+  
+  .form-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  input, textarea {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  .submit-btn input {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+  .submit-btn input:hover {
+    background-color: #e91e63;
+    color: #fff;
+  }
+  
+  /* Footer Section */
+  .copy-right {
+    text-align: center;
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Tablet View */
+  @media (max-width: 768px) {
+    .navbar ul {
+      display: block;
+      text-align: center;
+    }
+  
+    .home {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .home .info {
+      text-align: center;
+    }
+  
+    .skills {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-box {
+      flex-direction: column;
+    }
+  
+    .box {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  /* Mobile View */
+  @media (max-width: 480px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar ul {
+      display: block;
+    }
+  
+    .home {
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem;
+    }
+  
+    .socialmedia {
+      justify-content: center;
+    }
+  
+    .service-box {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .work-box {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .box, .wbox {
+      margin-bottom: 1.5rem;
+    }
+  
+    .form-info {
+      gap: 1rem;
+    }
+  
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+  
